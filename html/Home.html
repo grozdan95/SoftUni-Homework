@@ -1,0 +1,442 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Бизнес блог</title>
+    <link rel="icon" href="http://www.gstatic.com/mapspro/images/favicon-001.ico">
+    <link href="../css/webSite.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.0.0.min.js"></script>
+    <script src="../javaScript/functions.js"></script>
+</head>
+<body>
+ <!-----------------------------------------ZAGLAVIE----------------------------------->  
+    <div class="divTop" id="top">
+        <h2 class="head"><span class="head" id="town">Бизнес блог-Гроздан Андонов</span></h2>
+    </div>
+   <section>
+   <div id="loginRegisterSection"><a href="#" id="login">LOGIN</a> or <a href="#" id="register">REGISTER</a></div>
+   <div id="registered"></div>
+   <div id="logOut"><a href="#" id="logout">LOG-OUT</a></div>
+   <div id="errorBox" onclick="$(this).fadeOut()"></div>
+   <div id="infoBox" onclick="$(this).fadeOut()"></div>
+   <div id="loading">Loading...</div>
+   </section>
+ <!-----------------------------------------MENU----------------------------------->  
+    <div class="divList">
+        <a href="#top" id="homeSection"><div class="divSection"><span class="hiperLink"><b>Home</b></span></div></a>
+        <a href="#top" id="houseGrozdanSection"><div class="divSection"><span class="hiperLink"><b>Къща "Гроздан"</b></span></div></a>
+        <a href="#top" id="apartmentSection"><div class="divSection"><span class="hiperLink"><b>Продажба на апартаменти</b></span></div></a>
+        <a href="#top" id="rentCarSection"><div class="divSection"><span class="hiperLink"><b>Rent a car</b></span></div></a>
+    </div>
+<!-----------------------------------------SECTION-HOME-----------------------------------> 
+    <div id="homeDiv">
+    <h1 id="head-Grozdan">град Сандански</h1>
+    <img class="home-img1" src="../Pictures/sandanski-pics/sandanski-pic1.jpg" />
+
+        <a style="text-decoration:none" href="http://sandanskibg.com/" target="_blank"><h3 class="home-h3">Click here for the official site!<br>Официален сайт!</h3></a>
+  
+    <p class="home-p"><b><em>Община Сандански със своите 1060 кв. км. е най-голямата 
+        община в Благоевградска област, на трето място в Югозападния 
+        регион и девета по големина в Република България. Обхваща 54 
+        селища – градовете Сандански и Мелник и 52 села.</em></b></p>
+
+
+        <button id="button-show" class="button-style" type="button" onclick="showText()" id="button">Покажи още...</button>
+        <button id="button-hide" class="button-style" type="button" onclick="hideText()" id="button">Скрии текст...</button>
+       
+        <div id="hiddenText">
+        <p class="home-p">
+            <b><em>
+                Градът, разположен на надморска височина 220-240 м., е най-топлият български
+                град през всички годишни сезони, като продължителността на слънчевото
+                греене надминава 2 450 часа, създавайки условия за целогодишни слънчево-въздушни
+                процедури.
+            </em></b>
+        </p>
+        <p class="home-p">
+            <b><em>
+                Сандански е благословен от Бога кът на Родината ни, надарен щедро от природата.
+                Град с над 3200-годишна история, кръстовище на древни цивилизации, средище на богата култура
+                от времето на траките, римляните и други племена, населявали земите от Средна Струма.
+            </em></b>
+        </p>
+        <p class="home-p">
+            <b><em>
+                Богатото културно наследство безспорно доказва, че още в древността е
+                оценен животворният целебен дар на природата, сред която се е развивал и
+                пътувал градът към своето бъдеще. Щедрото слънце, лечебният въздух и
+                минералните извори и днес даряват здраве на хората и са благоприятни
+                предпоставки за развитие на климатолечението и на туризма. Сандански
+                утвърди славата си на курортен и туристически център с международно
+                значение, разкрил природното си великолепие и целебни дарове в името
+                на здравето на хората. Утвърди се като истински курорт по критериите
+                на европейската СПА – асоциация. Градът се превърна в символ на здраве,
+                марка за просперитет като туристически и балнеоложки център. Основната му
+                икономическа характеристика – туризма и балнеологията – определя и новия
+                облик на града и общината.
+            </em></b>
+        </p>
+        <img class="home-img2" src="../Pictures/sandanski-pics/sandanski-pic2.jpg" />
+        <img class="home-img3" src="../Pictures/sandanski-pics/sandanski-pic3.jpg" />
+        <img class="home-img4" src="../Pictures/sandanski-pics/sandanski-pic4.jpg" />
+        <p class="home-p">
+            <b><em>
+                Въздухът е изключително чист, с ниска относителна влажност (66%),
+                със средна годишна температура +14,70С, с незначителни денонощни и сезонни
+                температурни амплитуди. Зимата е мека и топла, снегът и мъглата са почти
+                непознати.
+           </em></b>
+        </p>
+        <p class="home-p">
+            <b><em>
+                С увеличаване на надморската височина средиземноморското влияние отслабва и
+                климатът постепенно придобива типичен планински характер в най-високите алпийски
+                части на Пирин. Внимание като климатични курорти заслужват и град Мелник и курортната
+                местност Попина лъка в Пирин. Активно и целогодишно успешно се лекуват хронични алергични
+                заболявания, заболявания на опорно-двигателния апарат, на периферната нервна система, на
+                отделителната система, на стомашно-чревните и чернодробно-жлъчни заболявания.
+                Балнеолечението се извършва в намиращите се на територията на общината Балнеосанаториуми,
+                балнеохотели, почивни домове и станции.
+           </em></b>
+        </p>
+        <p class="home-p">
+            <b><em>
+                Сандански предлага възможност за отдих в повече от 50 хотела, мотели, почивни станции и
+                къщи за гости. Многообразни са местата за развлечение и хранене в цялата община. Привлекателни
+                са балнеохотелите, СПА хотелите, изградените хотели във възрожденски стил в град Мелник и още
+                много други.
+           </em></b>
+        </p>
+        <p class="home-p">
+            <b><em>
+                Съчетаването на благоприятни природни дадености, заедно с богатството от минерални извори
+                с различна термалност (в района на община Сандански има над 80 извора с температура 42-81°С),
+                ниска минерализация, богат химически състав, лекуващи множество заболявания и даващи възможност
+                за къпане на открито през цялата година създават добри условия за привличане на туристи и повишава
+                конкурентноспособността на туристическата дестинация Община Сандански.
+                </em>
+            </b>
+        </p>
+        <p class="home-p">
+            <b><em>
+                За благоприятния климатолечебен ефект на почиващите в града спомага и фактът, че в Сандански
+                няма активни промишлени замърсители на въздуха и има много зелени площи, по който показател на
+                глава от населението, градът е водещ в страната.</em>
+            </b>
+        </p>
+
+        <iframe width="1080" height="500"  src="https://www.youtube.com/embed/Gem3RZHfV_4" frameborder="1" allowfullscreen></iframe>
+       
+        <a href="#top"><div class="button-style"><b>UP</b></div></a>
+           </div>
+    </div>
+<!----------------------------------------------------SECTION-HOUSE-GROZDAN-------------------------------------------> 
+<div id="houseGrozdanDiv">
+
+    <h1 id="head-Grozdan">Къща за гости "Гроздан"</h1><br>
+
+    <p class="home-p"><b><em>Къща "Гроздан" /Grozdan/ се намира в центъра на гр. Сандански в непосредствена близост до градския площад. Къщата
+         разполага с двойни стаи, стая 3-легла и апартамент, които са оборудвани с хладилник, климатик, телевизор с кабелна
+          телевизия, безжичен интернет и паркинг.</em></b></p>
+
+    <p class="home-p"><b><em>Guest house "Grozdan" is located in the center of Sandanski near the town square.
+        It has double rooms, 3-beds rooms and equipped with refrigerator, cable TV, wireless internet and parking.</em></b></p>  
+    <p class="home-p" style="color:red"><b><em>contact for info and reservation <br>num.+359-879-000-710/+359-878-115-531 <br>address:"Goce Delchev" str.№4</em></b> </p>       
+          <img src="../Pictures/kushtaGrozdan-Pics/PB151855.jpg" class="hotel-top"/>
+          <div style="margin-top:20px;">
+              <div id="list-item">
+    <ul id="ul1-style">
+        <li id="star1"><b><em>Удобства в Къща Гроздан</em></b><ul>
+            <li id="star2"><b><em>телевизор</em></b></li>
+            <li id="star2"><b><em>хладилник</em></b></li>
+            <li id="star2"><b><em>баня/тоалетна</em></b></li>
+            <li id="star2"><b><em>лятна градина</em></b></li>
+            <li id="star2"><b><em>TV</em></b></li>
+            <li id="star2"><b><em>WIFI</em></b></li>
+            <li id="star2"><b><em>тераса</em></b></li>
+            </ul>
+        </li>
+    </ul>
+              </div>
+              <div style="display:inline-block;">
+    <table id="table-item" border="3px">
+        <thead>
+            <tr>
+                <th colspan="3"><em>Price List</em></th>
+            </tr>
+            <tr>
+                <th colspan="1">Kind of the room</th>
+                <th colspan="1">Price</th>
+                <th colspan="1">Quantity</th>
+            </tr>
+        </thead>
+        <tbody style="text-align:center">
+            <tr>
+                <td>Single room</td><td>25 lv</td><td>4</td>
+            </tr>
+            <tr>
+                <td>Double room</td><td>35 lv</td><td>5</td>
+            </tr>
+            <tr>
+                <td>Tripple room</td><td>45 lv</td><td>3</td>
+            </tr>
+            <tr>
+                <td>Apartment</td><td>60 lv</td><td>1</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</div>
+
+<table id="second-table-grozdan">
+	<thead>
+	<tr>
+	<th colspan="3"><Span class="galery-heading">Hotel "Grozdan" photo galery</Span></th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td id="td-id"><a href="../Pictures/kushtaGrozdan-Pics/1.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/kushtaGrozdan-Pics/1.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/kushtaGrozdan-Pics/2.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/kushtaGrozdan-Pics/2.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/kushtaGrozdan-Pics/3.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/kushtaGrozdan-Pics/3.jpg"/></a></td>
+	</tr>
+	<tr>
+	<td id="td-id"><a href="../Pictures/kushtaGrozdan-Pics/4.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/kushtaGrozdan-Pics/4.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/kushtaGrozdan-Pics/5.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/kushtaGrozdan-Pics/5.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/kushtaGrozdan-Pics/6.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/kushtaGrozdan-Pics/6.jpg"/></a></td>
+	</tr>
+	<tr>
+	<td id="td-id"><a href="../Pictures/kushtaGrozdan-Pics/7.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/kushtaGrozdan-Pics/7.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/kushtaGrozdan-Pics/8.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/kushtaGrozdan-Pics/8.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/kushtaGrozdan-Pics/9.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/kushtaGrozdan-Pics/9.jpg"/></a></td>
+	</tr>
+	</tbody>
+	</table>
+
+   <h1 class="galery-heading"><em>LOCATION<br>town "Sandanski"<br>"Goce Delchev" str.№4</em></h1>
+
+
+<iframe src="https://www.google.com/maps/d/embed?mid=1nkGDVXd8LbRUMpm2FtI5IUg5r38" width="640" height="480"></iframe><br>
+
+<a href="#top"><div class="button-style"><b>UP</b></div></a>
+
+<h5 id="logIn-head2"></h5><br>
+<!------------------------------------------------------SECTION-COMMENT-HOUSE-GROZDAN-------------------------------------------->
+<div id="comment-Div-houseGrozdan">
+   <form id="formComment"> 
+    <h5 id="logIn-head">Comment:<span id="nameUserHolder"></span></h5><br>
+    Your name:<br>
+    <input type="text" id="name1" placeholder="Write your name...." /><br>Your comment:<br>
+    <textarea id="textCommentHouseGrozdan" rows="10" required placeholder="Write here...." item-width="100%"></textarea><br>
+    <input id="buttonCreateCommentHouseGrozdan" type="submit" value="COMMENT" style="padding:15px;"/>
+   </form>
+    <h5 id="logIn-head2"></h5><br>
+</div>
+
+</div>
+
+
+  <div id="commentsHouseGrozdan">
+      <h5 id="logIn-head">Comments:</h5><br>
+  </div>
+
+<!------------------------------------------------------SECTION-APARTMENTS-------------------------------------------->
+<div id="apartmentDiv">
+    <h1 id="head-Grozdan">Apartments for sale</h1><br>
+    <img src="../Pictures/apartamenti-pics/P7171069.jpg" class="hotel-top"/>
+        <br>
+  <p class="home-p"><em><b>Сградата е пред етап изваждане на акт 16 .Тя разполага с функционираща канализация, водопровод и свободни 
+      партиди за електричество. Сградата е разположена на 300 метра над хотел Сандански.Цена на 1 кв. м. 400-450 
+      евро със шпакловка, замаска и входна врата. Апартаментите са 31кв. м. ,40кв. м. ,50кв. м. ,62кв. м. ,93кв. 
+      м.Могат да се използват веднага след завършването им. Апартаментите не са ипотекирани (нямат тежести).</b></em></p>
+        <br>
+      <table id="second-table-grozdan">
+	<thead>
+	<tr>
+	<th colspan="3"><Span class="galery-heading">Photo galery</Span></th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td id="td-id"><a href="../Pictures/apartamenti-pics/8.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/apartamenti-pics/8.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/apartamenti-pics/1.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/apartamenti-pics/1.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/apartamenti-pics/2.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/apartamenti-pics/2.jpg"/></a></td>
+	</tr>
+	<tr>
+	<td id="td-id"><a href="../Pictures/apartamenti-pics/3.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/apartamenti-pics/3.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/apartamenti-pics/4.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/apartamenti-pics/4.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/apartamenti-pics/5.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/apartamenti-pics/5.jpg"/></a></td>
+	</tr>
+	<tr>
+	<td id="td-id"><a href="../Pictures/apartamenti-pics/6.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/apartamenti-pics/6.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/apartamenti-pics/7.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/apartamenti-pics/7.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/apartamenti-pics/9.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/apartamenti-pics/9.jpg"/></a></td>
+	</tr>
+    <tr>
+    <td id="td-id"><a href="../Pictures/apartamenti-pics/11.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/apartamenti-pics/11.jpg"/></a></td>
+    <td id="td-id"><a href="../Pictures/apartamenti-pics/12.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/apartamenti-pics/12.jpg"/></a></td>
+    <td id="td-id"><a href="../Pictures/apartamenti-pics/14.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/apartamenti-pics/14.jpg"/></a></td>
+    </tr>
+	</tbody>
+	</table>
+
+        <h1 class="galery-heading"><em>LOCATION<br>between town "Sandanski" and "Polenica" village<br>"Banski put" str.№4</em></h1>
+
+        <iframe src="https://www.google.com/maps/d/embed?mid=1mZXLR9Qhma0I99FTd8nFWPbqLA8" width="640" height="480"></iframe><br>
+
+
+        <a href="#top"><div class="button-style"><b>UP</b></div></a>
+        <h5 id="logIn-head2"></h5><br>
+
+
+        <div id="comment-Div-apartments">
+   <form id="formComment"> 
+    <h5 id="logIn-head">Comment:<span id="nameUserHolder"></span></h5><br>
+     Your name:<br>
+    <input type="text" id="name2" placeholder="Write your name...." /><br>Your comment:<br>
+    <textarea id="textCommentApartments" rows="10" required placeholder="Write here...." item-width="100%"></textarea><br>
+    <input id="buttonCreateCommentApartments" type="submit" value="COMMENT" style="padding:15px;"/>
+   </form>
+    <h5 id="logIn-head2"></h5><br>
+</div>
+
+</div>
+
+<div id="commentsApartments">
+     <h5 id="logIn-head">Comments:</h5><br>
+  </div>
+<!------------------------------------------------------SECTION-RENT-A-CAR--------------------------------------------> 
+<div id="rentCarDiv">
+    <h1 id="head-Grozdan">Rent a car</h1><br>
+    <img src="../Pictures/rentAcar-pics/header-img.jpg" id="top-pic-RentaCar"/>
+    <br>
+    <p class="home-p"><h1><b><em>Имате спешна нужда от автомобил? 
+        Не търсете повече, защото вече сте попаднали на правилното място.</em></b></h1></p>
+        <br>
+    <p class="home-p"><b><em>Навярно и на вас все някога ви се е случвало да изпаднете неочаквано
+         в безизходно положение поради техническа неизправност по автомобила ви. Несъмнено подобни
+         обстоятелства в никакъв случай не могат да бъдат представяни като особено приятни и разведряващи.</em></b></p>
+         <br>
+      <p class="home-p"><b><em>Въпреки лошия късмет, сполетял ви в най-неподходящия момент, не бива да се  
+    напрягате и притеснявате, тъй като ние можем да изкореним изцяло проблема, и то за отрицателно време!</em></b></p>  
+    <br>
+ <p class="home-p"><b><em>Нашата роля в подобни неприятни ситуации е да предоставим на клиента автомобилно
+      превозно средство, напълно обслужено и проверено технически, под наем за уговорено за целта време/срок,
+       в който „наемателят му“ да може да го ползва за изпълняване на целите/ангажиментите си.</em></b></p>  
+    <br>
+        <ul id="list-cars">
+        <li><b><em><span id="span-head-list">Повече за колите:</span><ul>
+            <li id="list-cars1">Години: 2000-2008 г.</li>
+            <li id="list-cars1">Два от автомобилите са с автоматична скоростна кутия.</li>
+            <li id="list-cars1">Всички от автомобилите разполагат с работещ климатик.</li>
+            <li id="list-cars1">Всички екстри за моделите.</li>
+            <li id="list-cars1">Добра визия, поддържани, обслужвани и пазени.</li>
+            </ul></em></b></li>
+    </ul>
+    <table id="table-item2" border="3px">
+        <thead>
+            <tr>
+                <th colspan="3"><em>Kind of cars</em></th>
+            </tr>
+            <tr>
+                <th colspan="1">Kind of the car</th>
+                <th colspan="1">Price</th>
+                <th colspan="1">Namalenie nad 7 dni</th>
+            </tr>
+        </thead>
+        <tbody style="text-align:center">
+            <tr>
+                <td>VW Passat 5</td><td>40 lv</td><td>35 lv</td>
+            </tr>
+            <tr>
+                <td>Hunday Getz</td><td>35 lv</td><td>30 lv</td>
+            </tr>
+            <tr>
+                <td>Shkoda Fabia</td><td>35 lv</td><td>30 lv</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <br>
+
+ <table id="second-table-grozdan">
+	<thead>
+    <tr class="galery-heading">
+        <th>VW Passat 5</th>
+        <th>Hunday Getz</th>
+        <th>Shkoda Fabia</th>
+    </tr>
+	</thead>
+	<tbody>
+	<tr>
+	<td id="td-id"><a href="../Pictures/rentAcar-pics/2.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/rentAcar-pics/2.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/rentAcar-pics/4.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/rentAcar-pics/4.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/rentAcar-pics/8.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/rentAcar-pics/8.jpg"/></a></td>
+	</tr>
+	<tr>
+	<td id="td-id"><a href="../Pictures/rentAcar-pics/3.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/rentAcar-pics/3.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/rentAcar-pics/5.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/rentAcar-pics/5.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/rentAcar-pics/9.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/rentAcar-pics/9.jpg"/></a></td>
+	</tr>
+	<tr>
+	<td id="td-id"><a href="../Pictures/rentAcar-pics/1.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/rentAcar-pics/1.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/rentAcar-pics/6.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/rentAcar-pics/6.jpg"/></a></td>
+	<td id="td-id"><a href="../Pictures/rentAcar-pics/7.jpg" target="blank"><img id="img-table-grozdan" src="../Pictures/rentAcar-pics/7.jpg"/></a></td>
+	</tr>
+	</tbody>
+	</table>
+
+ <h1 class="galery-heading"><em>LOCATION<br>town "Sandanski"<br>"Goce Delchev" str.№4</em></h1>
+
+<iframe src="https://www.google.com/maps/d/embed?mid=14nwS_KOX8ZRv6K6ezJzSU5198sk" width="640" height="480"></iframe><br>
+
+<a href="#top"><div class="button-style"><b>UP</b></div></a>
+<h5 id="logIn-head2"></h5><br>
+
+<div id="comment-Div-rentAcar">
+   <form id="formComment"> 
+    <h5 id="logIn-head">Comment:<span id="nameUserHolder"></span></h5><br>
+     Your name:<br>
+    <input type="text" id="name3" placeholder="Write your name...." /><br>Your comment:<br>
+    <textarea id="textCommentRentAcar" rows="10" required placeholder="Write here...." item-width="100%"></textarea><br>
+    <input id="buttonCreateCommentRentAcar" type="submit" value="COMMENT" style="padding:15px;"/>
+   </form>
+    <h5 id="logIn-head2"></h5><br>
+</div>
+
+</div>
+
+<div id="commentsRentACar">
+     <h5 id="logIn-head">Comments:</h5><br>
+  </div>
+<!--------------------------------------------------------SECTION-LOG-IN---------------------------------------------->
+<div id="login-div">
+    <h5 id="logIn-head">Log in, please!</h5><br>
+        <form id="formLogin">
+                    <p class="home-p">Username:</p>
+                    <input type="text" id="loginUser" required="true" placeholder="Enter username...."/>
+                    <p class="home-p">Password:</p>
+                    <input type="password" id="loginPass" required="true" placeholder="Enter password...."/><br><br> <!----required->zaduljitelno pole za populvane-->
+                    <input type="submit" id="ButtonLogin" value="LOGIN" style="padding:15px;"/>
+                </form>
+                <h5 id="logIn-head2"></h5><br>
+</div>
+<!--------------------------------------------------------SECTION-REGISTER---------------------------------------------->
+<div id="register-div">
+
+     <h5 id="logIn-head">Register, please!</h5><br>
+        <form id="formRegister">
+                    <p class="home-p">Username:</p>
+                    <input type="text" id="registerUser" required="true" placeholder="Enter username...."/>
+                    <p class="home-p">Password:</p>
+                    <input type="password" id="registerPass" required="true" placeholder="Enter password...."/>
+                    <br><br> <!----required->zaduljitelno pole za populvane-->
+                    <input type="submit" id="ButtonRegister" value="REGISTER" style="padding:15px;"/>
+                </form>
+                <h5 id="logIn-head2"></h5><br>
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,601 @@
+﻿body {
+    background:#FFD700;
+}
+.head{
+    text-align:center;
+    color:#FFD700;
+    font-size:1.5em;
+}
+.divSection .head{
+    text-align:center;
+    color:#00008B;
+    font-size:1.5em;
+    font-style:italic;
+}
+.divTop{
+    padding:10pt;
+    border-radius:10px;   
+    box-shadow: -5px 7px 7px black;
+    background:linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);
+    text-align:center;
+}
+.hiperLink{
+    text-align:center;
+    font-size:1.2em;
+    font-style:italic;
+    color:blue;
+}
+.divList{
+    padding:10pt;
+    border-radius:10pt;
+    border:groove #00008B;
+    background:linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 100%, #085689 85%);
+    display:inline-block;
+    margin-top:20px;
+    width:200px;
+    font-size:small;
+    text-decoration:none;
+    box-shadow: -5px 10px 7px black;
+    position: fixed;
+    
+}
+.divSection {
+    text-align:center;
+    text-decoration:none;
+    font-size:1.5em;
+    border:groove #00008B;
+    border-radius:5pt;
+    padding:7pt;
+    background:#FFD700;
+    margin-bottom:25px;
+    margin-top:25px;
+}
+.divList div:hover{
+    background: linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);
+    border: solid yellow; 
+}
+.divSection:hover span{
+    color:yellow;
+}
+#up-button{
+    background: linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);
+    text-decoration: none;
+    text-align: center;
+    width: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    float: center;
+}
+#homeSection{
+    text-decoration:none;
+}
+#homeSection :hover{
+    color:yellow;
+}
+#houseGrozdanSection{
+    text-decoration:none;
+}
+#houseGrozdanSection :hover{
+    color:yellow;
+}
+#apartmentSection{
+    text-decoration:none;
+}
+#apartmentSection :hover{
+    color:yellow;
+}
+#rentCarSection{
+    text-decoration:none;
+}
+#rentCarSection :hover{
+    color:yellow;
+}
+#login{
+    color: yellow;
+    text-decoration: none;
+}
+#register{
+    color: yellow;
+    text-decoration: none;
+}
+/************SECTIONS*****************************/
+#loginRegisterSection{
+    background: linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);
+    margin-top:10px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 7px;
+    color: yellow;
+    width: 150px;
+    box-shadow: -5px 7px 7px black;
+    display: inline-block;
+}
+#registered{
+     margin-top:10px;
+    background:linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    color:white;
+    display: inline-block;
+    box-shadow: -5px 7px 7px black;
+}
+#logOut{
+     margin-top:10px;
+    background:linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    color:yellow;;
+    display: inline-block;
+    box-shadow: -5px 7px 7px black;
+    text-decoration: none;
+}
+#logout{
+color:yellow;
+text-decoration: none;
+}
+#errorBox{
+     margin-top:10px;
+    background:red;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    color:white;
+    display: inline-block;
+}
+#infoBox{
+     margin-top:10px;
+    background:green;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    color:white;
+    display: inline-block;
+}
+#logNotSuccess{
+     margin-top:10px;
+    background:red;
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    color:white;
+    display: inline-block;
+}
+#loading{
+    margin-top:10px;
+    background:linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);
+    text-align: center;
+    padding: 10px;
+    border-radius: 7px;
+    color:white;
+    display: inline-block;
+}
+/***************************START***HOME***************************************************/
+#homeDiv{
+    height:100%;
+    border: 3px groove #00008B;
+    float:right;
+    margin-top:20px;
+    width:1090px;
+    border-radius:15px;
+    box-shadow: -5px 10px 7px black;
+    text-align: center;
+}
+.home-h1{
+    text-align:center;
+    font-family:Corbel;
+    color:blue;
+    font-size:3em;
+}
+.home-h3{
+    text-decoration:none;
+    font-family:Corbel;
+    color:red;
+    text-align:center;
+}
+.home-img1{
+    border-radius:15px;
+    box-shadow: -5px 10px 7px black;
+}
+.home-img2{
+    border-radius:15px;
+    margin-top:10px;
+    margin-left:15px;
+    margin-right:30px;
+    box-shadow: -5px 10px 7px black;
+}
+.home-img3{
+    height:195px;
+    border-radius:15px;
+    margin-right:30px;
+    box-shadow: -5px 10px 7px black;
+}
+.home-img4{
+    height:195px;
+    width:400px;
+    border-radius:15px;
+    box-shadow: -5px 10px 7px black;
+}
+.home-up{
+    color:red;
+    text-align:center;
+    font-family:Corbel;
+}
+.home-div{
+    border:4px solid blue;
+    width:30px;
+    padding:10px;
+    margin-left:500px;
+    text-align:center;
+    border-radius:15px;
+}
+.home-p{
+    font-family:Josefin Slab,Vollkorn,sans-serif;
+    font-size:1.1em;
+    margin-left:5px;
+    text-align:center;
+}
+#hiddenText{
+    display:none;
+}
+.button-style{
+    
+    background-color: blue;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.button-style:hover{
+    background-color: red;
+    cursor: pointer;
+}
+/**************END***HOME*****************/
+/***************START**HOTEL**************/
+#head-Grozdan{
+     text-align:center;
+    font-family:WildWest;
+    color:yellow;
+    font-size:3em;
+    background: linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);
+    padding: 20px;
+    border-radius: 10px;
+}
+#houseGrozdanDiv{
+height:100%;
+    border: 3px groove #00008B;
+    float:right;
+    margin-top:20px;
+    width:1090px;
+    border-radius:15px;
+   box-shadow: -5px 10px 7px black;
+   text-align:center;
+}
+.hotel-top{
+    height:400px;
+    width:600px;
+    border-radius:15px;
+    box-shadow: -5px 10px 7px black;
+}
+#googleMap{
+    margin-top:20px;
+}
+#table-item{
+    padding: 10px;
+    border:3px solid yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    width:500px;
+    height:250px;
+    margin-left: 150px;
+    margin-top: 90px;
+    background: linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);
+    color: yellow;
+}
+#list-item{
+    display:inline-block; 
+    margin-left:30px;
+    margin-top:-100px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+}
+#img-table-grozdan{
+    	width:300px;
+	    height:300px;
+        border-radius: 5px;
+}
+#second-table-grozdan{
+     margin-left:70px;
+     font-family: Arial, Helvetica, sans-serif;
+     font-size: 1.5em; 
+}
+.galery-heading{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+    text-align: center;
+     background: linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);
+     border-radius:5px;
+     color: yellow;
+     padding: 10px;
+}
+#ul1-style{
+    text-align: center;
+}
+#star1{
+      list-style-type: none;
+      color: royalblue;
+}
+#star2 {
+    list-style-image:url("../Pictures/kushtaGrozdan-Pics/1star.png");
+    color:yellow;
+     line-height: 1.5em;
+      background: linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);
+      border-radius: 5px;
+    margin: 5px;
+    text-align: center;
+}
+/****************END***HOTEL****************/
+/***************START***APARTMENTS**********/
+#apartmentDiv{
+height:100%;
+    border: 3px groove #00008B;
+    float:right;
+    margin-top:20px;
+    width:1090px;
+    border-radius:15px;
+   box-shadow: -5px 10px 7px black;
+   text-align: center;
+}
+
+/*****************END***APARTMENTS*********/
+/***************START***RENTaCAR***********/
+#rentCarDiv{
+    height:100%;
+    border: 3px groove #00008B;
+    float:right;
+    margin-top:20px;
+    width:1090px;
+    border-radius:15px;
+    box-shadow: -5px 10px 7px black;
+    text-align: center;
+}
+#top-pic-RentaCar{
+    border-radius:15px;
+    box-shadow: -5px 10px 7px black;
+}
+.divSection:hover span{
+    color:yellow;
+}
+#table-item2{
+    padding: 10px;
+    border:3px solid yellow;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5em;
+    width:500px;
+    height:250px;
+    background: linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);
+    color: yellow;
+    margin-left: 320px;
+    margin-top: 30px;
+}
+#list-cars{
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+}
+#list-cars1{
+    list-style-type: none;
+    color:red;
+}
+#span-head-list{
+    font-size: 2em;
+    color:blue;
+}
+#td-id{
+    padding: 5px;
+    border-radius: 15px;
+}
+#td-id:hover{
+    background: red;
+}
+/*****************END***RENTaCAR*********/
+/*****************START***LOGIN*********/
+#login-div{
+height:100%;
+    border: 3px groove #00008B;
+    float:right;
+    margin-top:20px;
+    width:1090px;
+    border-radius:15px;
+   box-shadow: -5px 10px 7px black;
+   text-align: center;
+}
+#logIn-head{
+
+text-align: center;
+font-size: 2em;
+font-family: WildWest;
+background:  linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);
+border-radius:10px;
+color: yellow;
+text-align: left;
+padding: 15px;
+text-align: center;
+}
+#logIn-head2{
+background:  linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);
+border-radius:10px;
+color: yellow;
+text-align: left;
+padding: 15px;
+margin-bottom: -5px;
+}
+#formLogin{
+background: linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);
+color:yellow;
+text-align: center;
+padding: 20px;
+width: 250px;
+border-radius: 10px;
+margin-bottom: 20px;
+margin-left:400px;
+}
+/*****************END***LOGIN*************/
+/*****************START***REGISTER********/
+#register-div{
+height:100%;
+    border: 3px groove #00008B;
+    float:right;
+    margin-top:20px;
+    width:1090px;
+    border-radius:15px;
+   box-shadow: -5px 10px 7px black;
+   text-align:center;
+}
+#formRegister{
+    background: linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);
+    color:yellow;
+text-align: center;
+padding: 20px;
+width: 250px;
+border-radius: 10px;
+margin-bottom: 20px;
+margin-left:400px;
+}
+/*****************END***REGISTER**********/
+/*****************START***makeCOMMENT********/
+#commentsHouseGrozdan{
+     height:100%;
+    border: 3px groove #00008B;
+    float:right;
+    margin-top:20px;
+    width:1090px;
+    border-radius:15px;
+   box-shadow: -5px 10px 7px black;
+   text-align:center;
+}
+table {
+    table-layout: fixed;
+    
+}
+
+table td {
+    word-wrap: break-word;         /* All browsers since IE 5.5+ */
+    overflow-wrap: break-word;     /* Renamed property in CSS3 draft spec */
+}
+#commentsRentACar{
+      height:100%;
+    border: 3px groove #00008B;
+    float:right;
+    margin-top:20px;
+    width:1090px;
+    border-radius:15px;
+   box-shadow: -5px 10px 7px black;
+   text-align:center;
+}
+#commentTextNewTable{
+width:200px;
+}
+#commentsApartments{
+     height:100%;
+    border: 3px groove #00008B;
+    float:right;
+    margin-top:20px;
+    width:1090px;
+    border-radius:15px;
+   box-shadow: -5px 10px 7px black;
+   text-align:center;
+}
+#comment-Div-houseGrozdan{
+    height:100%;
+    border: 3px groove #00008B;
+    float:right;
+    margin-top:20px;
+    width:1090px;
+    border-radius:15px;
+   box-shadow: -5px 10px 7px black;
+   text-align:center;
+}
+#comment-Div-rentAcar{
+  height:100%;
+    border: 3px groove #00008B;
+    float:right;
+    margin-top:20px;
+    width:1090px;
+    border-radius:15px;
+   box-shadow: -5px 10px 7px black;
+   text-align:center;
+}
+#comment-Div-apartments{
+  height:100%;
+    border: 3px groove #00008B;
+    float:right;
+    margin-top:20px;
+    width:1090px;
+    border-radius:15px;
+   box-shadow: -5px 10px 7px black;
+   text-align:center;
+}
+#comments2{
+    height:100%;
+    border: 3px groove #00008B;
+    float:right;
+    margin-top:20px;
+    width:1090px;
+    border-radius:15px;
+   box-shadow: -5px 10px 7px black;
+   text-align:center;
+}
+textarea
+{
+  border:1px solid #999999;
+  width:70%;
+  margin:5px 0;
+  padding:3px;
+}
+#authorNewTable{
+     background: linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);
+    padding:  10px;
+    font-size:1.5em;
+     border-radius: 10px;
+     color:yellow;
+     text-align: center;
+     width: 200px;
+}
+#commentNewTable{
+   background: linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);
+    padding: 10px;
+    font-size:1.5em;
+     border-radius: 10px;
+      color:yellow;
+      text-align: center;
+}
+#dateNewTable{
+   background: linear-gradient(to bottom, #216ea2 0%, #206ea1 36%, #1c699d 45%, #055386 74%, #004d81 85%, #085689 100%);
+    padding: 10px;
+    font-size:1.5em;
+     border-radius: 10px;
+      color:yellow;
+      text-align: left;
+}
+#creatorNewTable{
+ background: #ddd;
+    padding: 5px 10px;
+    font-size:1.2em;
+}
+#commentTextNewTable{
+ background: #ddd;
+    padding: 5px 10px;
+    font-size:1.2em;
+}
+#tableComments{
+    border-radius: 10px;
+    
+    width:1090px;
+}
